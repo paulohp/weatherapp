@@ -20,3 +20,5 @@
 * [React-Switch](https://markusenglund.github.io/react-switch/)
 * [Date-fns](https://date-fns.org)
 * [API Xu (Weather API)](https://www.apixu.com/doc/forecast.aspx)
+* [Webpack 4](https://webpack.js.org/)
+* [Geolocation Api](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
