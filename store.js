@@ -27,13 +27,15 @@ const initialState = {
 
 export const actionTypes = {
   GET_FORECAST: 'GET_FORECAST',
-  SWITCH_TEMP: 'SWITCH_TEMP'
+  FETCH_FORECAST_SUCCESS: 'GET_FORECAST_SUCCESS',
+  FETCH_FORECAST_REQUEST: 'FETCH_FORECAST_REQUEST',
+  SWITCH_TEMP: 'SWITCH_TEMP',
 }
 
 // REDUCERS
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case actionTypes.GET_FORECAST:
+    case actionTypes.FETCH_FORECAST_SUCCESS:
       return Object.assign({}, state, {
         location: action.location,
         current: action.current,
@@ -48,15 +50,25 @@ export const reducer = (state = initialState, action) => {
 }
 
 // ACTIONS
+const fetchForecastRequest = () => {
+  return {
+    type: actionTypes.FETCH_FORECAST_REQUEST
+  }
+}
+
+const fetchForecastSuccess = data => {
+  return {
+    type: actionTypes.FETCH_FORECAST_SUCCESS,
+    location: data.location,
+    current: data.current,
+    forecast: data.forecast
+  }
+}
 export const getForecast = (query) => dispatch => {
+  dispatch(fetchForecastRequest())
   return axios.get(`${API_URL}&q=${query}`)
     .then(({data}) => {
-      return dispatch({
-        type: actionTypes.GET_FORECAST,
-        location: data.location,
-        current: data.current,
-        forecast: data.forecast
-      })
+      return dispatch(fetchForecastSuccess(data))
     })
 }
 

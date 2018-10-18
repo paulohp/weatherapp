@@ -25,3 +25,5 @@
 * [API Xu (Weather API)](https://www.apixu.com/doc/forecast.aspx)
 * [Webpack 4](https://webpack.js.org/)
 * [Geolocation Api](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
+* [Jest](https://jestjs.io)
+* [Enzyme](https://airbnb.io/enzyme)

@@ -600,6 +600,8 @@ var initialState = {
 };
 var actionTypes = {
   GET_FORECAST: 'GET_FORECAST',
+  FETCH_FORECAST_SUCCESS: 'GET_FORECAST_SUCCESS',
+  FETCH_FORECAST_REQUEST: 'FETCH_FORECAST_REQUEST',
   SWITCH_TEMP: 'SWITCH_TEMP' // REDUCERS
 
 };
@@ -608,7 +610,7 @@ var reducer = function reducer() {
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
   switch (action.type) {
-    case actionTypes.GET_FORECAST:
+    case actionTypes.FETCH_FORECAST_SUCCESS:
       return Object.assign({}, state, {
         location: action.location,
         current: action.current,
@@ -625,16 +627,27 @@ var reducer = function reducer() {
   }
 }; // ACTIONS
 
+var fetchForecastRequest = function fetchForecastRequest() {
+  return {
+    type: actionTypes.FETCH_FORECAST_REQUEST
+  };
+};
+
+var fetchForecastSuccess = function fetchForecastSuccess(data) {
+  return {
+    type: actionTypes.FETCH_FORECAST_SUCCESS,
+    location: data.location,
+    current: data.current,
+    forecast: data.forecast
+  };
+};
+
 var getForecast = function getForecast(query) {
   return function (dispatch) {
+    dispatch(fetchForecastRequest());
     return axios__WEBPACK_IMPORTED_MODULE_3___default.a.get("".concat(API_URL, "&q=").concat(query)).then(function (_ref) {
       var data = _ref.data;
-      return dispatch({
-        type: actionTypes.GET_FORECAST,
-        location: data.location,
-        current: data.current,
-        forecast: data.forecast
-      });
+      return dispatch(fetchForecastSuccess(data));
     });
   };
 };

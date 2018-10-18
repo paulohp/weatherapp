@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import format from 'date-fns/format'
 import Router from 'next/router'
 import { switchTemp, getForecast } from '../store'
-import mapCodeToClass from '../lib/map-code-to-class'
+import mapCodeToClass from '../lib/utils/map-code-to-class'
 
 import SwitchTemp from '../components/SwitchTemp'
 import WeatherWrapper from '../components/styles/WeatherWrapper'
