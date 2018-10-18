@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing App shows "Hello world!" 1`] = `
+<div
+  className="WeatherWrapper-sc-1h3fegy-0 bowJJO"
+>
+  <div
+    className="HeaderWrapper-sc-12xqpd6-0 JSVVm"
+  >
+    <button
+      className="BackButton-ubqbho-0 hpVQki"
+      onClick={[Function]}
+    />
+    <h1
+      className="CityTitle-d450c9-0 iAQqGl"
+      id="cityTitle"
+    >
+      Tallinn
+    </h1>
+    <div
+      className="react-switch"
+      style={
+        Object {
+          "MozTransition": "opacity 0.25s",
+          "MozUserSelect": "none",
+          "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+          "WebkitTransition": "opacity 0.25s",
+          "WebkitUserSelect": "none",
+          "borderRadius": 15,
+          "display": "inline-block",
+          "msUserSelect": "none",
+          "opacity": 1,
+          "position": "relative",
+          "textAlign": "left",
+          "touchAction": "none",
+          "transition": "opacity 0.25s",
+          "userSelect": "none",
+        }
+      }
+    >
+      <div
+        className="react-switch-bg"
+        onClick={[Function]}
+        style={
+          Object {
+            "MozTransition": "background 0.25s",
+            "WebkitTransition": "background 0.25s",
+            "background": "#E1E1E1",
+            "borderRadius": 15,
+            "cursor": "pointer",
+            "height": 30,
+            "margin": 0,
+            "position": "relative",
+            "transition": "background 0.25s",
+            "width": 80,
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "MozTransition": "opacity 0.25s",
+              "WebkitTransition": "opacity 0.25s",
+              "height": 30,
+              "opacity": 1,
+              "pointerEvents": "none",
+              "position": "relative",
+              "transition": "opacity 0.25s",
+              "width": 45,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "color": "black",
+                "display": "flex",
+                "fontSize": 15,
+                "height": "100%",
+                "justifyContent": "center",
+                "paddingRight": 2,
+              }
+            }
+          >
+            °C
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "MozTransition": "opacity 0.25s",
+              "WebkitTransition": "opacity 0.25s",
+              "height": 30,
+              "opacity": 0,
+              "pointerEvents": "none",
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "transition": "opacity 0.25s",
+              "width": 45,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "alignItems": "center",
+                "color": "black",
+                "display": "flex",
+                "fontSize": 15,
+                "height": "100%",
+                "justifyContent": "center",
+                "paddingRight": 2,
+              }
+            }
+          >
+            °F
+          </div>
+        </div>
+      </div>
+      <div
+        aria-checked={true}
+        aria-disabled={false}
+        className="react-switch-handle"
+        id="icon-switch"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onTouchCancel={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="checkbox"
+        style={
+          Object {
+            "MozTransition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+            "WebkitTransition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+            "background": "#FDFDFD",
+            "border": 0,
+            "borderRadius": "50%",
+            "boxShadow": null,
+            "cursor": "pointer",
+            "display": "inline-block",
+            "height": 28,
+            "outline": 0,
+            "position": "absolute",
+            "top": 1,
+            "transform": "translateX(51px)",
+            "transition": "background-color 0.25s, transform 0.25s, box-shadow 0.15s",
+            "width": 28,
+          }
+        }
+        tabIndex={0}
+      />
+    </div>
+  </div>
+  <div
+    className="BodyWrapper-sc-119ngh9-0 eJoSBy"
+  >
+    <h1
+      className="WeatherTitle-rvyp26-0 dFvOUE"
+      id="weatherTitle"
+    >
+      Thursday, October 18th 2018
+    </h1>
+    <h2
+      className="ConditionTitle-du3h3q-0 jLIIUL"
+      id="conditionTitle"
+    >
+      Clear
+    </h2>
+    <div
+      className="TemperatureBody-sc-1bf7n53-0 cEDxeI"
+    >
+      <h1
+        className="TemperatureTitle-sc-5mnbsq-0 jCFkbO"
+      >
+        0°C
+      </h1>
+      <i
+        className="wi undefined TemperatureIcon-sc-12g1jlh-0 dgDxIL"
+      />
+      <br />
+      <div
+        className="DailyBody-aklxv8-0 eyvRBN"
+      >
+        <div
+          className="DailyCondition-sc-1rqbpx9-0 gAYEhD"
+        >
+          <span>
+            Wind 
+          </span>
+           
+          <span>
+            km/h
+          </span>
+        </div>
+        <div
+          className="DailyCondition-sc-1rqbpx9-0 gAYEhD"
+        >
+          <span>
+            Humidity
+          </span>
+           
+          <span>
+            %
+          </span>
+        </div>
+        <div
+          className="DailyCondition-sc-1rqbpx9-0 gAYEhD"
+        >
+          <span>
+            Feels Like
+          </span>
+           
+          <span>
+            undefined°C
+          </span>
+        </div>
+      </div>
+    </div>
+    <ul
+      className="WeeklyBody-sc-3q6y77-0 ffdKpl"
+    />
+  </div>
+</div>
+`;

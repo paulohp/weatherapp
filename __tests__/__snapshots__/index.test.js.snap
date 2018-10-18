@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing App shows "Hello world!" 1`] = `
+<div
+  className="BoxWrapper-sc-1bexchc-0 gbwMGK"
+>
+  <div
+    className="CityWrapper-sc-1suz4et-0 isKHtB"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        className="CityInput-sc-1xyphig-0 gKkXsI"
+        id="cityInput"
+        name="city"
+        onChange={[Function]}
+        placeholder="City"
+        type="text"
+        value=""
+      />
+      <button
+        onClick={[Function]}
+      >
+        <i />
+      </button>
+    </form>
+  </div>
+  <p>
+    or
+  </p>
+  <span>
+    use my 
+  </span>
+  <button
+    className="LocationButton-rh62ww-0 bdxliu"
+    id="locationButton"
+    onClick={[Function]}
+  >
+    current position
+  </button>
+</div>
+`;

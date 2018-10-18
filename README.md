@@ -7,6 +7,9 @@
 * `npm run dev`
 * open `localhost:2525` at your favorite browser
 
+* to run tests `npm test`
+
+
 ## Tech Stack
 
 * [React 16](https://reactjs.org/blog/2017/09/26/react-v16.0.html)

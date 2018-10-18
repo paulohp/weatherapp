@@ -22,7 +22,7 @@ import DailyCondition from '../components/styles/DailyCondition'
 import WeeklyBody from '../components/styles/WeeklyBody'
 import WeeklyCondition from '../components/styles/WeeklyCondition'
 
-class Weather extends Component {
+export class Weather extends Component {
   static getInitialProps({ query }) {
     return { query }
   }
@@ -51,14 +51,14 @@ class Weather extends Component {
       <WeatherWrapper>
         <HeaderWrapper>
           <BackButton onClick={this.handleBack} />
-          <CityTitle>{ location.name }</CityTitle>
+          <CityTitle id="cityTitle">{ location.name }</CityTitle>
           <SwitchTemp celciusChecked={state.celciusChecked} handleTempChoice={this.handleTempChoice}  />
         </HeaderWrapper>
         <BodyWrapper>
-          <WeatherTitle>
+          <WeatherTitle  id="weatherTitle">
             { format(location.localtime, 'dddd, MMMM Do YYYY') }
           </WeatherTitle>
-          <ConditionTitle>
+          <ConditionTitle id="conditionTitle">
             { current.condition.text }
           </ConditionTitle>
           <TemperatureBody>

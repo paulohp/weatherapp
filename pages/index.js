@@ -9,7 +9,7 @@ import CityWrapper from '../components/styles/CityWrapper'
 import CityInput from '../components/styles/CityInput'
 import LocationButton from '../components/styles/LocationButton'
 
-class Index extends Component {
+export class Index extends Component {
   state = {
     city: ''
   }
@@ -54,12 +54,12 @@ class Index extends Component {
       <BoxWrapper>
         <CityWrapper>
           <form onSubmit={this.handleSubmit}>
-            <CityInput onChange={this.handleInputChange} name="city" value={this.state.city} type="text" placeholder="City"  />
+            <CityInput onChange={this.handleInputChange} name="city" value={this.state.city} type="text" placeholder="City" id="cityInput" />
             <button onClick={this.handleSubmit}><i  /></button>
           </form>
         </CityWrapper>
         <p>or</p>
-        <span>use my </span><LocationButton onClick={this.handleLocation}>current position</LocationButton>
+        <span>use my </span><LocationButton id="locationButton" onClick={this.handleLocation}>current position</LocationButton>
       </BoxWrapper>
     )
   }
